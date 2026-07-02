@@ -1,0 +1,13 @@
+- generic [ref=f48e4]:
+  - generic [ref=f48e5]: 多模型智能体协作平台
+  - generic [ref=f48e7]:
+    - generic [ref=f48e11]:
+      - img [ref=f48e14]
+      - textbox "用户名" [ref=f48e16]: admin
+    - generic [ref=f48e20]:
+      - img [ref=f48e23]
+      - textbox "密码" [ref=f48e26]: admin123
+      - img [ref=f48e29] [cursor=pointer]
+    - button "登 录" [ref=f48e34] [cursor=pointer]:
+      - generic [ref=f48e35]: 登 录
+    - generic [ref=f48e39] [cursor=pointer]: 没有账号？去注册

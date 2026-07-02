@@ -1,0 +1,60 @@
+- generic [ref=f37e3]:
+  - menubar [ref=f37e4]:
+    - generic [ref=f37e5]:
+      - img [ref=f37e7]
+      - generic [ref=f37e9]: Agent Platform
+    - menuitem "仪表盘" [ref=f37e10] [cursor=pointer]:
+      - img [ref=f37e12]
+      - generic [ref=f37e14]: 仪表盘
+    - menuitem "模型 & Agent 管理" [ref=f37e15] [cursor=pointer]:
+      - img [ref=f37e17]
+      - generic [ref=f37e19]: 模型 & Agent 管理
+    - menuitem "工作流模板" [ref=f37e20] [cursor=pointer]:
+      - img [ref=f37e22]
+      - generic [ref=f37e24]: 工作流模板
+    - menuitem "提交任务" [ref=f37e25] [cursor=pointer]:
+      - img [ref=f37e27]
+      - generic [ref=f37e29]: 提交任务
+    - menuitem "任务历史" [ref=f37e30] [cursor=pointer]:
+      - img [ref=f37e32]
+      - generic [ref=f37e34]: 任务历史
+  - generic [ref=f37e35]:
+    - generic [ref=f37e36]:
+      - button [ref=f37e38] [cursor=pointer]:
+        - img [ref=f37e41]
+      - generic [ref=f37e43]:
+        - generic [ref=f37e44]:
+          - switch
+          - img [ref=f37e49] [cursor=pointer]
+        - button "admin" [ref=f37e53] [cursor=pointer]:
+          - img [ref=f37e55]
+          - text: admin
+    - main [ref=f37e57]:
+      - generic [ref=f37e58]:
+        - heading "新建工作流" [level=2] [ref=f37e59]
+        - generic [ref=f37e62]:
+          - generic [ref=f37e63]:
+            - generic [ref=f37e64]: 名称
+            - textbox "名称" [ref=f37e68]:
+              - /placeholder: 工作流名称
+          - generic [ref=f37e69]:
+            - generic [ref=f37e70]: 描述
+            - textbox "描述" [ref=f37e74]:
+              - /placeholder: 描述（可选）
+        - generic [ref=f37e75]:
+          - generic [ref=f37e77]:
+            - generic [ref=f37e78]: 步骤列表
+            - generic [ref=f37e79]:
+              - button "+ 添加步骤" [ref=f37e80] [cursor=pointer]:
+                - generic [ref=f37e81]: + 添加步骤
+              - button "占位符说明" [ref=f37e84] [cursor=pointer]:
+                - generic [ref=f37e85]: 占位符说明
+                - img [ref=f37e87]
+          - generic [ref=f37e90]:
+            - img [ref=f37e92]
+            - paragraph [ref=f37e109]: 点击左侧步骤进行配置
+        - generic [ref=f37e110]:
+          - button "保存模板" [ref=f37e111] [cursor=pointer]:
+            - generic [ref=f37e112]: 保存模板
+          - button "取消" [ref=f37e113] [cursor=pointer]:
+            - generic [ref=f37e114]: 取消

@@ -1,0 +1,59 @@
+- generic [active] [ref=f48e1]:
+  - generic [ref=f48e40]:
+    - menubar [ref=f48e41]:
+      - generic [ref=f48e42]:
+        - img [ref=f48e44]
+        - generic [ref=f48e46]: Agent Platform
+      - menuitem "仪表盘" [ref=f48e47] [cursor=pointer]:
+        - img [ref=f48e49]
+        - generic [ref=f48e51]: 仪表盘
+      - menuitem "模型 & Agent 管理" [ref=f48e52] [cursor=pointer]:
+        - img [ref=f48e54]
+        - generic [ref=f48e56]: 模型 & Agent 管理
+      - menuitem "工作流模板" [ref=f48e57] [cursor=pointer]:
+        - img [ref=f48e59]
+        - generic [ref=f48e61]: 工作流模板
+      - menuitem "提交任务" [ref=f48e62] [cursor=pointer]:
+        - img [ref=f48e64]
+        - generic [ref=f48e66]: 提交任务
+      - menuitem "任务历史" [ref=f48e67] [cursor=pointer]:
+        - img [ref=f48e69]
+        - generic [ref=f48e71]: 任务历史
+    - generic [ref=f48e72]:
+      - generic [ref=f48e73]:
+        - button [ref=f48e75] [cursor=pointer]:
+          - img [ref=f48e78]
+        - generic [ref=f48e80]:
+          - generic [ref=f48e81]:
+            - switch
+            - img [ref=f48e86] [cursor=pointer]
+          - button "admin" [ref=f48e90] [cursor=pointer]:
+            - img [ref=f48e92]
+            - text: admin
+      - main [ref=f48e94]:
+        - generic [ref=f48e95]:
+          - heading "仪表盘" [level=2] [ref=f48e96]
+          - generic [ref=f48e97]:
+            - generic [ref=f48e101]:
+              - generic [ref=f48e102]: "0"
+              - generic [ref=f48e103]: 总任务数
+            - generic [ref=f48e107]:
+              - generic [ref=f48e108]: "0"
+              - generic [ref=f48e109]: 已完成
+            - generic [ref=f48e113]:
+              - generic [ref=f48e114]: "0"
+              - generic [ref=f48e115]: 执行中
+            - generic [ref=f48e119]:
+              - generic [ref=f48e120]: "0"
+              - generic [ref=f48e121]: 失败
+          - generic [ref=f48e122]:
+            - generic [ref=f48e123]: 最近任务
+            - generic [ref=f48e125]:
+              - img [ref=f48e127]
+              - paragraph [ref=f48e144]: 暂无任务
+  - alert [ref=f48e145]:
+    - img [ref=f48e147]
+    - paragraph [ref=f48e149]: 登录成功
+  - alert [ref=f48e150]:
+    - img [ref=f48e152]
+    - paragraph [ref=f48e154]: "Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: \"stats\""

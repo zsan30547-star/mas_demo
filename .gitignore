@@ -1,0 +1,40 @@
+# Java / Maven
+backend/target/
+backend/*.iml
+backend/.idea/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python
+ai_engine/__pycache__/
+ai_engine/.venv/
+ai_engine/.venv_3_10/
+ai_engine/**/__pycache__/
+ai_engine/chroma_data/
+
+# Docker
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Env
+.env
+.env.local

@@ -1,0 +1,58 @@
+# /backend/src/main/resources/application.yml
+# 职责描述：Spring Boot 主配置文件
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: backend
+
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/agent_platform?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # Redis 配置
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  # RabbitMQ 配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
+    virtual-host: /
+
+  # 文件上传配置
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 60MB
+
+# Mybatis-Plus 配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: edu.nslk.imylm.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 文件上传配置
+file:
+  upload-dir: ${user.dir}/uploads
+
+# 预置数据配置
+preset:
+  deepseek-api-key: ""
+
+# JWT 配置
+jwt:
+  secret: YWdlbnQtcGxhdGZvcm0tanBzZWNyZXQta2V5LWZvci10b2tlbi1zaWduaW5nLTIwMjY=
+  access-token-expiration: 7200000    # 2小时(毫秒)
+  refresh-token-expiration: 604800000 # 7天(毫秒)

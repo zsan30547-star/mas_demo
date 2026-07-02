@@ -1,0 +1,63 @@
+- generic [ref=f38e3]:
+  - menubar [ref=f38e4]:
+    - generic [ref=f38e5]:
+      - img [ref=f38e7]
+      - generic [ref=f38e9]: Agent Platform
+    - menuitem "仪表盘" [ref=f38e10] [cursor=pointer]:
+      - img [ref=f38e12]
+      - generic [ref=f38e14]: 仪表盘
+    - menuitem "模型 & Agent 管理" [ref=f38e15] [cursor=pointer]:
+      - img [ref=f38e17]
+      - generic [ref=f38e19]: 模型 & Agent 管理
+    - menuitem "工作流模板" [ref=f38e20] [cursor=pointer]:
+      - img [ref=f38e22]
+      - generic [ref=f38e24]: 工作流模板
+    - menuitem "提交任务" [ref=f38e25] [cursor=pointer]:
+      - img [ref=f38e27]
+      - generic [ref=f38e29]: 提交任务
+    - menuitem "任务历史" [ref=f38e30] [cursor=pointer]:
+      - img [ref=f38e32]
+      - generic [ref=f38e34]: 任务历史
+  - generic [ref=f38e35]:
+    - generic [ref=f38e36]:
+      - button [ref=f38e38] [cursor=pointer]:
+        - img [ref=f38e41]
+      - generic [ref=f38e43]:
+        - generic [ref=f38e44]:
+          - switch
+          - img [ref=f38e49] [cursor=pointer]
+        - button "admin" [ref=f38e53] [cursor=pointer]:
+          - img [ref=f38e55]
+          - text: admin
+    - main [ref=f38e57]:
+      - generic [ref=f38e58]:
+        - heading "模型 & Agent 管理" [level=2] [ref=f38e60]
+        - generic [ref=f38e61]:
+          - tablist [ref=f38e65]:
+            - tab "API 凭证库" [ref=f38e67]
+            - tab "模型配置" [selected] [ref=f38e68]
+            - tab "Agent 配置" [ref=f38e69]
+          - tabpanel "模型配置" [ref=f38e71]:
+            - button "添加模型" [ref=f38e73] [cursor=pointer]:
+              - generic [ref=f38e74]: 添加模型
+            - generic [ref=f38e76]:
+              - table [ref=f38e78]:
+                - rowgroup [ref=f38e85]:
+                  - row "名称 模型标识 绑定的凭证 类型 操作" [ref=f38e86]:
+                    - columnheader "名称" [ref=f38e87]:
+                      - generic [ref=f38e88]: 名称
+                    - columnheader "模型标识" [ref=f38e89]:
+                      - generic [ref=f38e90]: 模型标识
+                    - columnheader "绑定的凭证" [ref=f38e91]:
+                      - generic [ref=f38e92]: 绑定的凭证
+                    - columnheader "类型" [ref=f38e93]:
+                      - generic [ref=f38e94]: 类型
+                    - columnheader "操作" [ref=f38e95]:
+                      - generic [ref=f38e96]: 操作
+              - generic [ref=f38e100]:
+                - table:
+                  - rowgroup
+                - generic [ref=f38e102]: No Data
+            - generic [ref=f38e103]:
+              - img [ref=f38e105]
+              - paragraph [ref=f38e122]: 暂无模型配置

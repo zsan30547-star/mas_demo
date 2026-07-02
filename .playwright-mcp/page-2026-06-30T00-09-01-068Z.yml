@@ -1,0 +1,45 @@
+- generic [ref=f4e3]:
+  - menubar [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - img [ref=f4e7]
+      - generic [ref=f4e9]: Agent Platform
+    - menuitem "仪表盘" [ref=f4e10] [cursor=pointer]:
+      - img [ref=f4e12]
+      - generic [ref=f4e14]: 仪表盘
+    - menuitem "模型 & Agent 管理" [ref=f4e15] [cursor=pointer]:
+      - img [ref=f4e17]
+      - generic [ref=f4e19]: 模型 & Agent 管理
+    - menuitem "工作流模板" [ref=f4e20] [cursor=pointer]:
+      - img [ref=f4e22]
+      - generic [ref=f4e24]: 工作流模板
+    - menuitem "提交任务" [ref=f4e25] [cursor=pointer]:
+      - img [ref=f4e27]
+      - generic [ref=f4e29]: 提交任务
+    - menuitem "任务历史" [ref=f4e30] [cursor=pointer]:
+      - img [ref=f4e32]
+      - generic [ref=f4e34]: 任务历史
+  - generic [ref=f4e35]:
+    - generic [ref=f4e36]:
+      - button [ref=f4e38] [cursor=pointer]:
+        - img [ref=f4e41]
+      - generic [ref=f4e43]:
+        - generic [ref=f4e44]:
+          - switch
+          - img [ref=f4e49] [cursor=pointer]
+        - button "admin" [ref=f4e53] [cursor=pointer]:
+          - img [ref=f4e55]
+          - text: admin
+    - main [ref=f4e57]:
+      - generic [ref=f4e58]:
+        - button "← 返回" [ref=f4e59] [cursor=pointer]:
+          - generic [ref=f4e60]: ← 返回
+        - heading "任务详情" [level=2] [ref=f4e61]
+        - generic [ref=f4e62]:
+          - generic [ref=f4e63]:
+            - generic [ref=f4e65]:
+              - generic [ref=f4e66]: 执行进度
+              - generic [ref=f4e68]:
+                - img [ref=f4e70]
+                - paragraph [ref=f4e87]: 暂无执行日志
+            - generic [ref=f4e90]: 执行日志
+          - img [ref=f4e95]

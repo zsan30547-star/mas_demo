@@ -1,0 +1,100 @@
+/* /frontend/src/styles/variables.css */
+/* 职责描述：现代 SaaS 极简风格 CSS 变量与 Element Plus 覆盖 */
+
+:root {
+  /* 品牌主色调 - 专业且现代的蓝色 */
+  --color-primary: #2563eb;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #1d4ed8;
+
+  /* 背景与卡片层级 */
+  --color-bg: #f3f4f6;          /* 页面浅灰底色 */
+  --color-surface: #ffffff;     /* 卡片纯白底色 */
+  --color-surface-hover: #f9fafb;
+
+  /* 文字颜色级层 */
+  --color-text-primary: #111827;   /* 主标题 */
+  --color-text-regular: #374151;   /* 正文 */
+  --color-text-secondary: #6b7280; /* 辅助/次要 */
+  --color-text-placeholder: #9ca3af;
+
+  /* 边框 */
+  --color-border: #e5e7eb;
+  --color-border-light: #f3f4f6;
+
+  /* 语义状态色 */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #6b7280;
+
+  /* 主题衍生色 */
+  --color-primary-bg: #ecf5ff;   /* 主要色的极浅背景 */
+
+  /* 现代 SaaS 的柔和高定阴影 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+
+  /* 圆角全面放大，提升现代感 */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* 动画过渡 */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
+/* 覆盖 Element Plus 的默认全局变量，让组件库完美融入我们的 SaaS 风格 */
+:root {
+  --el-color-primary: var(--color-primary);
+  --el-bg-color-page: var(--color-bg);
+  --el-bg-color: var(--color-surface);
+  --el-text-color-primary: var(--color-text-primary);
+  --el-text-color-regular: var(--color-text-regular);
+  --el-border-color: var(--color-border);
+  --el-border-color-light: var(--color-border-light);
+  --el-border-radius-base: var(--radius-sm);
+  --el-border-radius-small: 4px;
+  --el-box-shadow-light: var(--shadow-md);
+}
+
+/* 全局覆盖 el-card，让所有卡片都拥有圆滑舒适的边界和阴影 */
+.el-card {
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--color-border) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+.el-card__header {
+  border-bottom: 1px solid var(--color-border) !important;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* 深色模式变量覆盖 */
+html.dark {
+  --color-bg: #141414;
+  --color-surface: #1d1e1f;
+  --color-surface-hover: #2a2a2b;
+
+  --color-text-primary: #e5eaf3;
+  --color-text-regular: #cfd3dc;
+  --color-text-secondary: #a3a6ad;
+  --color-text-placeholder: #8d9095;
+
+  --color-border: #414243;
+  --color-border-light: #363637;
+
+  --color-primary-bg: rgba(37, 99, 235, 0.12);   /* 暗色下的蓝色极浅背景 */
+
+  /* 暗色模式下，终端面板底色也需要变深 */
+  --terminal-bg: #141414;
+  --terminal-border: #363637;
+}
+
+/* 亮色模式下终端变量的默认值（为了配合前面的浅色 SaaS 风格） */
+:root {
+  --terminal-bg: #f8fafc;
+  --terminal-border: #e2e8f0;
+}
