@@ -38,7 +38,18 @@ docker-compose up -d
 
 ### 2. 启动服务
 
-项目根目录下有 `manage.bat` 一键启停脚本：
+项目根目录下提供了一键启停脚本：
+
+**Linux / macOS：**
+
+| 操作 | 命令 |
+|------|------|
+| 启动所有服务 | `bash manage.sh start` |
+| 停止所有服务 | `bash manage.sh stop` |
+| 重启所有服务 | `bash manage.sh restart` |
+| 查看状态 | `bash manage.sh status` |
+
+**Windows：**
 
 | 操作 | 命令 |
 |------|------|
